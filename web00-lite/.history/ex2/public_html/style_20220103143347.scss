@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(77, 255, 121);
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+}
+
+.form-content {
+  background-color: #fff;
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.form-list {
+  margin: 0;
+  padding: 40px;
+  list-style: none;
+
+  .list-content {
+    &:first-child, &:nth-child(2) {
+      input {
+        background-color: rgb(223, 223, 223);
+        border: 0;
+      }
+    }
+    &:nth-child(3) button {
+      background-color: rgb(44, 149, 2);
+      color: white;
+      border: 0;
+    }
+  }
+}

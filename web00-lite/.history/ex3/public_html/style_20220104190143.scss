@@ -1,0 +1,31 @@
+i {
+  width: 100px;
+  height: 100px;
+  color: black;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+}
+
+.Btn{
+  border: 1px solid #5bc8ac;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #5bc8ac;
+  background: #fff;
+  font-size: 24px;
+  transition: .4s;
+}
+
+.Btn:hover{
+  color: #fff;
+  background: #5bc8ac;
+  transition: .4s;
+}

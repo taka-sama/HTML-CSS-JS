@@ -1,0 +1,45 @@
+.btn-wrapper {
+  position: relative;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  //上
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    border-top: 3px solid #000;
+    animation: border-animation 3s linear forwards;
+    animation-delay: 0.5s;
+  }
+   //
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    border-top: 3px solid #000;
+    animation: border-animation 3s linear forwards;
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes border-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+

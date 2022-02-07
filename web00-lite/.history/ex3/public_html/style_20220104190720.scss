@@ -1,0 +1,42 @@
+// i {
+//   width: 100px;
+//   height: 100px;
+//   color: black;
+// }
+
+a{
+  display: block;
+  text-decoration: none;
+}
+
+.btn{
+  border: 1px solid #1a0dab;
+  margin-left: auto;
+  margin-right: auto;
+  width: 160px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  font-size: 24px;
+  transition: .4s;
+}
+
+.twitter {
+  color: skyblue;
+  background-color: white;
+  &:hover {
+    color: white;
+    background-color: skyblue;
+  }
+}
+
+.facebook {
+  
+}
+
+.btn:hover{
+  // color: #fff;
+  transition: .4s;
+}

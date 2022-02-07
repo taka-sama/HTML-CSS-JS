@@ -1,0 +1,10 @@
+.card {
+  list-style: none;
+  display: flex;
+  margin: 0 40rem;
+  padding: 0;
+  .card-item img {
+    width: 100px;
+    height: 300px;
+  }
+}

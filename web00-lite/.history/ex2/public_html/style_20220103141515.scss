@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(77, 255, 121);
+}
+
+.form-content {
+  background-color: #fff;
+  display: inline-block;
+}
+
+.form-list {
+  margin: 0;
+  padding: 40px;
+  list-style: none;
+
+  .list-content {
+    &:first-child {
+      
+    }
+  }
+}

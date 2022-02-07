@@ -1,0 +1,14 @@
+.card {
+  list-style: none;
+  display: flex;
+  margin: 0 50px;
+  padding: 0;
+  .card-item {
+    width: 300px;
+    
+  }
+  .card-item img {
+    width: 250px;
+    height: 280px;
+  }
+}

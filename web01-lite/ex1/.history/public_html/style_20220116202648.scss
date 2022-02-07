@@ -1,0 +1,103 @@
+$border-color: linear-gradient(to top right, #ff7145 0%, #ff1414 25%, #ff0082 50%, #ff0073 100%);
+
+.btn-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  background: -webkit-linear-gradient(0deg, #40E0D0, #FF8C00, #FF0080);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  & span {
+    display: block;
+    padding-top: 18px;
+  }
+  //border-left 1 
+  & span::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid;
+    border-color: linear-gradient(to top right, #ff7145 0%, #ff1414 25%, #ff0082 50%, #ff0073 100%);
+    border-color: #ff7145;
+    animation: border-animation_2 0.3s linear forwards;
+    animation-delay: 0.5s;
+  }
+  //border-top 2
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    border-top: 3px solid;
+    // border-color: linear-gradient(to top right, #ff7145 0%, #ff1414 25%, #ff0082 50%, #ff0073 100%);
+    border-color: #ff1414;
+    animation: border-animation_1 0.3s linear forwards;
+    animation-delay: 0.8s;
+  }
+  //border-right 3
+  & span::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    border-right: 3px solid;
+    // border-color: linear-gradient(to top right, #ff7145 0%, #ff1414 25%, #ff0082 50%, #ff0073 100%);
+    border-color: #ff0082;
+    animation: border-animation_2 0.3s linear forwards;
+    animation-delay: 1.1s;
+  }
+   //border-bottom 4
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    border-top: 3px solid;
+    // border-color: linear-gradient(to top right, #ff7145 0%, #ff1414 25%, #ff0082 50%, #ff0073 100%);
+    border-color: #ff0073;
+    animation: border-animation_1 0.3s linear forwards;
+    animation-delay: 1.4s;
+  }
+}
+
+@keyframes border-animation_1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes border-animation_2 {
+  0% {
+    height: 0%;
+  }
+  100% {
+    height: 100%;
+  }
+}
+
+@keyframes color-ani{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

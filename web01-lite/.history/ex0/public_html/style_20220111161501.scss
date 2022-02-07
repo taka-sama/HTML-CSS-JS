@@ -1,0 +1,59 @@
+body {
+  background-color: #f1f2f1;
+}
+button {
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+button {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 70px;
+  margin: 40px auto 0;
+  color: #fff;
+  font-size: 1.5em;
+  background: #007db9;
+  overflow: hidden;
+}
+
+button span {
+  position: relative;
+  z-index: 1;
+  transition: .3s;
+}
+
+button:hover span {
+  color: #007db9;
+}
+
+/* 疑似要素 */
+button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  transform: translate3d(-100%, 0, 0);
+  transition: .3s;
+}
+
+/* 疑似要素(hover) */
+button:hover:before {
+  transform: translate3d(0, 0, 0);
+}
+
+.symbol {
+  margin-right: 30px;
+}
+.symbol_hover {
+  display: none;
+  &:hover {
+    display: block;
+  }
+}

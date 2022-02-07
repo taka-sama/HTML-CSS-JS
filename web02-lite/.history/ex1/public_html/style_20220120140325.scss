@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+}
+.card {
+  list-style: none;
+  display: flex;
+  margin: 0 50px;
+  padding: 0;
+  justify-content: space-between;
+  top: 50%;
+  transform: translateY(50%);
+  .card-item {
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 10px 25px 0 rgba(53, 53, 53, 0.198);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .card-item img {
+    width: 250px;
+    height: 270px;
+  }
+}
+
+h1 {
+  font-size: 20px;
+}
+p {
+  font-size: 14px;
+}
