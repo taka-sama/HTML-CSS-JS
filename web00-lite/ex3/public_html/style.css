@@ -1,10 +1,14 @@
 body {
-  background-color: lightgray;
+  background-color: #d0d4d2;
 }
 
 .btn-wrapper {
   display: flex;
   justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .Btn {
@@ -25,12 +29,12 @@ body {
 .Btn-Text {
   font-weight: bold;
   z-index: 1000;
-  transition: 0.6s ease all;
+  transition: 0.5s ease all;
 }
 
 .Btn:hover .Btn-Text {
   color: white;
-  transition: 0.6s ease all;
+  transition: 0.5s ease all;
 }
 
 .Btn:before {
@@ -45,23 +49,23 @@ body {
   width: 60px;
   height: 60px;
   transform: scale(0);
-  transition: 0.6s ease all;
+  transition: 0.5s ease all;
 }
 
 .Btn:hover:before {
-  transform: scale(4.2);
+  transform: scale(2.2);
 }
 
 .Btn-t::before {
-  background-color: #78beff;
+  background-color: #4aa4ff;
 }
 
 .Btn-f::before {
-  background-color: navy;
+  background-color: #4569a0;
 }
 
 .Btn-t {
-  color: #78beff;
+  color: #4aa4ff;
   margin-right: 20px;
 }
 

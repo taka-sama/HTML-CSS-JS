@@ -1,17 +1,14 @@
 body {
-  background-color: rgb(97, 96, 96);
+  background-color:	rgb(34,34,34);
   // text-align: center;
   color: white;
-
-  div {
-    // position: relative;
-  }
 
   h1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
-    font-family: serif;
+    font-family: sans-serif;
+    letter-spacing: 20px;
   }
 }
