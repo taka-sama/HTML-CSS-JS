@@ -1,5 +1,5 @@
 body {
-  background-color: #222222;
+  background-color: #313131;
   color: white;
 }
 
@@ -10,4 +10,5 @@ body h1 {
   transform: translateY(-50%) translateX(-50%);
   font-family: sans-serif;
   letter-spacing: 20px;
+  font-weight: 100;
 }
